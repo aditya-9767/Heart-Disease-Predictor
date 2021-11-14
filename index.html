@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html><head>
+<title>Heart Disease Prediction</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/index_styling.css">
+<link rel="shortcut icon" href="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/2x/external-health-medical-kiranshastry-lineal-color-kiranshastry.png" type="image/x-icon">
+</head><body>
+  
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="/" class="w3-bar-item w3-button"><b>Heart Disease Prediction
+    </b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Predict Here</h3>
+  </div>
+
+ 
+ 
+ 
+ 
+  <div class="container">
+    <form action="/predictions" method="POST" id="myForm" >
+      <div class="row">
+        <div class="col-25">
+          <label for="fname" class="tooltip"><strong>AGE</strong> <span class="tooltiptext">Age</span> </label>
+        </div>
+        <div class="col-75">
+            <input type="number" step="any"  name="age" placeholder="Enter your AGE" style="height:40px ;width: 100%; border-radius: 4px;" required >
+          </div>
+      </div>
+
+
+      
+      
+      
+      
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="lname" class="tooltip"><strong>Gender</strong>
+        <span class="tooltiptext">Gender</span></label>
+          
+        </div>
+        <div class="col-75">
+            <select name="gender" required >
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+              <option value="1">Male</option>
+              <option value="0">Female</option>
+              
+            </select>
+          </div>
+      </div>
+     
+     
+     
+     
+     
+      <div class="row">
+        <div class="col-25">
+          <label for="lname" class="tooltip"><strong>Chest Pain Type</strong>
+            <span class="tooltiptext">Excessive urination</span></label>
+          
+        </div>
+        <div class="col-75">
+            <select name="polyuria" >
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+              <option value="0">asymptomatic</option>
+              <option value="1">atypical angina</option>
+              <option value="2">non-anginal pain</option>
+              <option value="3">typical angina</option>
+              
+            </select>
+          </div>
+      </div>
+     
+      
+        <form action="/predictions" method="POST" id="myForm" >
+          <div class="row">
+            <div class="col-25">
+              <label for="fname" class="tooltip"><strong>Resting Blood Pressure</strong> <span class="tooltiptext">Age</span> </label>
+            </div>
+            <div class="col-75">
+                <input type="number" step="any"  name="age" placeholder="in mm Hg" style="height:40px ;width: 100%; border-radius: 4px;" required >
+              </div>
+          </div>
+
+
+
+
+
+
+        
+          <form action="/predictions" method="POST" id="myForm" >
+            <div class="row">
+              <div class="col-25">
+                <label for="fname" class="tooltip"><strong>Serum Cholestoral</strong> <span class="tooltiptext">Age</span> </label>
+              </div>
+              <div class="col-75">
+                  <input type="number" step="any"  name="age" placeholder="in mg/dl " style="height:40px ;width: 100%; border-radius: 4px;" required >
+                </div>
+            </div>
+     
+     
+
+
+
+     
+      <div class="row">
+        <div class="col-25">
+          <label for="lname" class="tooltip"><strong>Fasting Blood Sugar</strong>
+            <span class="tooltiptext">Excess thirst</span></label>
+          
+        </div>
+        <div class="col-75">
+            <select name="polydipsia" >
+                <option value="none" selected disabled hidden >
+                    Select an Option
+                </option>
+              <option value="1">YES</option>
+              <option value="0">NO</option>      
+              
+            </select>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="lname" class="tooltip"><strong>Resting Electrocardiographic Results </strong>
+            <span class="tooltiptext">Weight Loss</span></label>
+          
+        </div>
+        <div class="col-75">
+            <select name="weightloss" >
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="0">Showing probable or definate left venticular hypertrophy by Estes criteria</option>
+                <option value="1">Normal</option> 
+                <option value="2">Having ST-T wave abnormality</option>
+              
+            </select>
+          </div>
+      </div>
+      
+      
+    
+      
+
+
+      
+        <form action="/predictions" method="POST" id="myForm" >
+          <div class="row">
+            <div class="col-25">
+              <label for="fname" class="tooltip"><strong>Maximum Heart Rate Achieved</strong> <span class="tooltiptext">Age</span> </label>
+            </div>
+            <div class="col-75">
+                <input type="number" step="any"  name="age" placeholder="" style="height:40px ;width: 100%; border-radius: 4px;" required >
+              </div>
+          </div>
+      
+
+
+      
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="lname" class="tooltip"><strong>Exercise Induced Angina</strong>
+            <span class="tooltiptext">Weakness</span></label>
+          
+        </div>
+        <div class="col-75">
+            <select name="weakness" >
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="1">YES</option>
+                <option value="0">NO</option> 
+              
+            </select>
+          </div>
+      </div>
+      
+      
+      
+     
+      
+
+
+
+
+
+
+      
+        <form action="/predictions" method="POST" id="myForm" >
+          <div class="row">
+            <div class="col-25">
+              <label for="fname" class="tooltip"><strong>ST Depression Induced by Exercise Relative to Rest</strong> <span class="tooltiptext">Age</span> </label>
+            </div>
+            <div class="col-75">
+                <input type="number" step="any"  name="age" placeholder="" style="height:40px ;width: 100%; border-radius: 4px;" required >
+              </div>
+          </div>
+
+
+      
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="lname" class="tooltip"><strong>Slope</strong>
+            <span class="tooltiptext">Excessive eating</span></label>
+          
+        </div>
+        <div class="col-75">
+            <select name="polyphagia" >
+                <option value="none" selected disabled hidden>
+                    Select an Option 
+                </option>
+              <option value="0">Downsloping</option>
+              <option value="1">Flat</option>
+              <option value="2">Upsloping</option>
+              
+            </select>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="lname" class="tooltip"><strong>The number of Major Vessels</strong>
+            <span class="tooltiptext">Irritation at genitals</span></label>
+          
+        </div>
+        <div class="col-75">
+            <select name="genitalthrush">
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              
+            </select>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="lname" class="tooltip"><strong>Thalassemia</strong>
+            <span class="tooltiptext">Blurry vision</span></label>
+          
+        </div>
+        <div class="col-75">
+            <select name="visualblurring" >
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="0">NUll</option>
+                <option value="1">Fixed defect</option> 
+                <option value="2">Normal blood flow</option>
+                <option value="3">Reversible defect</option>
+              
+            </select>
+          </div>
+      </div>
+      
+      
+      
+
+      
+      
+      
+      
+      
+      <div class="row">
+        <input type="submit" value="SUBMIT" style="width: 82px; height: 38px;margin-top: 12px;">
+        <input  type="reset" value="RESET" style="width: 82px; height: 38px;margin-top: 12px;">
+      </div>
+    </form>
+    
+    
+  </div>
+
+
+  
+
+<!-- End page content -->
+</div>
+
+
+
+
+</body>
+</html>
